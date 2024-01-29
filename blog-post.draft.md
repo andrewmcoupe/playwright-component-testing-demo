@@ -118,9 +118,13 @@ test("input should focus when clicking on the placeholder", async ({
 
 ## 7️⃣ Run the tests
 
+🤕 Headless mode:
+
 ```bash
-pnpm test:components # To run the tests in headless mode (in the terminal).
+pnpm test:components
 ```
+
+🖥️ In browser:
 
 ```bash
 pnpm test:components:ui # To run the tests within a browser UI,
