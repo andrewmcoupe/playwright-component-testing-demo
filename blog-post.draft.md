@@ -8,7 +8,7 @@ I'm using `pnpm` as my package manager, but you can use an alternative if you pr
 
 ## 1️⃣ Create a new Vitest React project
 
-This will scaffold out a new project with the React template - including some `package.json` scripts.
+This will scaffold out a new project with the React TypeScript template.
 
 ```bash
 pnpm create vite my-app --template react-ts
@@ -16,7 +16,7 @@ pnpm create vite my-app --template react-ts
 
 ## 2️⃣ Initialise the Playwright Component Testing setup
 
-This will scaffold out the Playwright Component Testing setup.
+This will scaffold out the Playwright Component Testing setup and append some scripts in your `package.json`.
 
 ```bash
 pnpm create playwright --ct
@@ -26,7 +26,7 @@ You'll be asked a few questions so select the options which are relevant to you.
 
 A `playwright-ct.config.ts` file will be created in the root of the project. This is where you can configure the Playwright Component Testing setup.
 
-A `playwright` directory will be created in the root of the project with the following structure:
+A `playwright` directory will also be created in the root of the project with the following structure:
 
 ```
 playwright
