@@ -1,6 +1,14 @@
 import { test, expect } from "@playwright/experimental-ct-react";
 import { EditableText } from "./EditableText.tsx";
 
+test("regression", async ({ mount }) => {
+  const component = await mount(
+    <EditableText label={"Update your username"} placeholder={"John Doe"} />,
+  );
+
+  expect(await component.screenshot()).toMatchSnapshot();
+});
+
 test("input should focus when clicking on the placeholder", async ({
   mount,
 }) => {
